@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Booking Confirmed</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f7f7f7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .success {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="success">
+    <h1>🎉 Booking Confirmed!</h1>
+    <p id="details"></p>
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+    const date = params.get("date");
+    const people = params.get("people");
+    const raft = params.get("raft");
+    const vacant = params.get("vacant");
+
+    document.getElementById("details").innerHTML =
+      `<strong>${name}</strong>, your booking is confirmed for ${people} people on <strong>${date}</strong> in Raft #${raft}.` +
+      (vacant === "1" ? "<br>⚠️ 1 seat is still vacant." : "");
+  </script>
+</body>
+</html>

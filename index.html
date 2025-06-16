@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>RiverRaft Kannur</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preload" as="image" href="assets/rafting1.jpg">
+<link rel="preload" as="image" href="assets/rafting2.jpg">
+<link rel="preload" as="image" href="assets/rafting3.jpg">
+
+</head>
+
+<body>
+
+
+  <!-- Loading Screen -->
+<div id="loader">
+  <div class="spinner"></div>
+  <p> Loading data.....</p>
+</div>
+<!-- loading end -->
+
+<div class="alert-bar">
+  <div class="marquee-wrapper">
+    <div class="marquee-content">
+      <span>⚠️ Limited slots only due to seasonal availability!</span>
+      <span>⚠️ Book fast before it fills!</span>
+      <span>⚠️ Group bookings get special discounts!</span>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- <header class="site-header">
+    <div class="container">
+      <h1 class="logo">RiverRaft Kannur</h1>
+    </div>
+  </header> -->
+  <nav>
+    
+        <div class="nav-links">
+          <a href="#plans">Plans</a>
+          <a href="https://wa.me/+917593046852" target="_blank" rel="noopener">Book</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Cherupuzha River Rafting</h1>
+    <p>Experience the thrill of white water adventure in the heart of Kerala. 
+       Join us at Cherupuzha for a safe, scenic, and unforgettable rafting experience across the lush valleys of Kannur.</p>
+    <div class="button-wrapper">
+        <a href="https://wa.me/+917593046852" target="_blank" rel="noopener" class="button">Book Now</a>
+    </div>
+  </div>
+</section>
+
+
+   <!-- <div class="overlay" id="booking">
+  <div class="booking-card">
+    <h1>River Raft Booking</h1>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="tel" id="phone" placeholder="Mobile Number" required />
+      <input type="date" id="date" required />
+      
+      <select id="time" required>
+        <option value="">Select Time Slot</option>
+        <option value="8-10am">8:00 AM – 10:00 AM</option>
+        <option value="11-1pm">11:00 AM – 1:00 PM</option>
+        <option value="2-4pm">2:00 PM – 4:00 PM</option>
+        <option value="5-6pm">5:00 PM – 6:00 PM</option>
+      </select>
+
+      <input type="number" id="people" placeholder="No. of People (5-6)" min="5" max="6" required />
+      <button type="submit">Pay ₹1000 & Book Now</button>
+    </form>
+    <div id="statusMsg"></div>
+  </div>
+</div> -->
+
+
+
+    
+<div class="section">
+    <h2 class="sliding-h2">Our Rafting Moments</h2>
+    <div class="gallery">
+      <img src="assets/img2.jpg" loading="lazy" alt="img 1">
+      <img src="assets/img1.jpg" loading="lazy" alt="img 2">
+      <img src="assets/img3.jpg" loading="lazy" alt="img 3">
+      <img src="assets/img4.jpg" loading="lazy" alt="img 4">
+      <img src="assets/img5.jpg" loading="lazy" alt="img 5">
+    </div>
+  </div>
+
+
+
+  <section class="timing-section" id="timings">
+  <h2>Timing Schedule</h2>
+  
+  <div class="timing-box">
+    <div class="timing-slot">
+      <h3>Morning Slot</h3>
+      <p>7:00 AM – 9:00 AM</p>
+    </div>
+    <div class="timing-slot">
+      <h3>Midday Slot</h3>
+      <p>10:00 AM – 12:00 PM</p>
+    </div>
+    <div class="timing-slot">
+      <h3>Afternoon Slot</h3>
+      <p>1:00 PM – 3:00 PM</p>
+    </div>
+    <div class="timing-slot">
+      <h3>Evening Slot</h3>
+      <p>4:00 PM – 6:00 PM</p>
+    </div>
+  </div>
+
+  <div class="timing-note">
+    <p><strong>Note:</strong> Maximum <strong>6 people</strong> per raft. Minimum <strong>5 required</strong> for booking.</p>
+  </div>
+</section>
+
+<section class="video-section">
+  <h2 class="video-title">Watch Our Rafting Experience 🛶❤️</h2>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/P1Q-vj15ZD4?si=T85XUwsnSgOzaMtc" 
+      frameborder="0" 
+      allow="autoplay; encrypted-media" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+
+
+<section class="pricing-table-section" id="plans">
+  <h2>River Rafting Price Chart</h2>
+  <div class="pricing-table-wrapper">
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Raft Type</th>
+          <th>Time Slot</th>
+          <th>Duration</th>
+          <th>Max People</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Standard Raft</td>
+          <td>8:00 AM – 10:00 AM</td>
+          <td>2 Hours</td>
+          <td>6</td>
+          <td>₹999</td>
+        </tr>
+        <tr>
+          <td>Adventure Raft</td>
+          <td>11:00 AM – 1:00 PM</td>
+          <td>2 Hours</td>
+          <td>6</td>
+          <td>₹1299</td>
+        </tr>
+        <tr>
+          <td>Thrill Raft</td>
+          <td>2:00 PM – 4:00 PM</td>
+          <td>2 Hours</td>
+          <td>6</td>
+          <td>₹1499</td>
+        </tr>
+        <tr>
+          <td>Private Family Raft</td>
+          <td>4:30 PM – 6:00 PM</td>
+          <td>1.5 Hours</td>
+          <td>Private (1–6)</td>
+          <td>₹4999</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+
+<section class="safety-section" id="safety">
+  <h2>Safety Guidelines</h2>
+  <p class="safety-intro">Your safety is our top priority. Please follow these guidelines for a secure and enjoyable rafting experience.</p>
+  
+  <div class="safety-grid">
+    <div class="safety-card">
+      <i class="fas fa-shirt"></i>
+      <h3>Wear Life Jacket</h3>
+      <p>Always wear a certified life jacket throughout the rafting session.</p>
+    </div>
+    <div class="safety-card">
+      <i class="fas fa-helmet-safety"></i> 
+      <h3>Helmet is Mandatory</h3>
+      <p>Protect your head — a helmet must be worn at all times (we'll provide).</p>
+    </div>
+    <div class="safety-card">
+      <i class="fas fa-user-shield"></i>
+      <h3>Follow Instructions</h3>
+      <p>Listen carefully and follow all instructions from your guide.</p>
+    </div>
+    <div class="safety-card">
+      <i class="fas fa-swimmer"></i>
+      <h3>Swimming Skills (Optional)</h3>
+      <p>Not mandatory, but basic swimming knowledge is helpful.</p>
+    </div>
+    <div class="safety-card">
+      <i class="fas fa-ban"></i>
+      <h3>No Alcohol / Drugs</h3>
+      <p>Consumption of alcohol or drugs before rafting is strictly prohibited.</p>
+    </div>
+    <div class="safety-card">
+      <i class="fas fa-dumbbell"></i>
+      <h3>Basic Fitness</h3>
+      <p>Rafting is a physical activity. Ensure you're reasonably fit.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="faq-section" id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-container">
+    <div class="faq-item">
+      <h3>Is river rafting safe for beginners?</h3>
+      <p>Yes! Our trained guides ensure all safety measures are followed. You’ll be given a safety briefing and gear before starting.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do I need to know swimming?</h3>
+      <p>No, swimming is not mandatory. Life jackets are provided, and our team is trained in water safety protocols.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What should I wear?</h3>
+      <p>Wear quick-dry clothes, water shoes, and avoid loose accessories. A change of clothes is recommended post-rafting.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What’s the duration of the rafting session?</h3>
+      <p>Each rafting session takes approximately 1.5 to 2 hours, including briefing and return transport.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is prior booking required?</h3>
+      <p>Yes, prior booking is mandatory. You can reserve your slot easily through our online booking section.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact-section" id="contact">
+  <h2>Contact Us</h2>
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="post">
+    <input type="hidden" name="access_key" value="321cf2c0-99d3-4dfe-97d2-b235574be064">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Name" required />
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Your Email" required />
+    </div>
+    <div class="form-group">
+      <input type="tel" name="number" placeholder="Your Number" required />
+    </div>
+    <div class="form-group">
+      <input type="text" name="place" placeholder="Your Place" required />
+    </div>
+    <div class="form-group">
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<section class="split-contact-section" id="contact">
+  <div class="split-container">
+    
+    <!-- Left: Google Map -->
+    <div class="left-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.416038650024!2d75.39818457482932!3d12.287745087968316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba45d560d3075a7%3A0x2c8b58e2cdf3ca3d!2sCherupuzha%20River%20Rafting!5e0!3m2!1sen!2sin!4v1749708596631!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="right-contact">
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>WhatsApp:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> info@cherupuzharafting.com</p>
+      <br>
+      <p><strong>Location:</strong><br>
+        Cherupuzha, Kannur<br>
+        Kerala - 670511, India</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <footer class="footer" id="footer">
+    <p>&copy; 2025 RiverRaft Kannur. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/+917593046852" class="whatsapp-button" target="_blank" rel="noopener">
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/whatsapp.svg" alt="WhatsApp Icon" />
+  <span>Connect Us</span>
+</a>
+</body>
+
+</html>
