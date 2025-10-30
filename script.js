@@ -79,3 +79,40 @@ window.addEventListener('load', () => {
     });
   });
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Mobile Menu Toggle Logic
+    const menuToggle = document.getElementById('mobile-menu');
+    const navMenu = document.getElementById('nav-links-menu');
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked (optional but good UX)
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                // Check if the menu is open before closing
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    }
+
+    // Existing Loader Logic (Keep this)
+    const loader = document.getElementById('loader');
+    if (loader) {
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 1000);
+    }
+    
+    // Alert Bar Logic (Keep this)
+    const alertBar = document.querySelector('.alert-bar');
+    if (alertBar) {
+        setTimeout(() => {
+            alertBar.style.display = 'block';
+        }, 1500);
+    }
+});
